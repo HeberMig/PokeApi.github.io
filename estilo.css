@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Madimi+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    /*background-color: bisque;*/
+    background-image: url("./imagen/fondoPokebola.jpeg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration:solid;
+    color:rgb(228, 220, 202);
+    font-size:larger;
+    font-family: "Audiowide", sans-serif;
+    text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+}
+
+#nav {
+    width: 100%;
+    background-color: #333;
+    background-image: url("./imagen/pokemonNav3.jpg");
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center ; /* Centra los elementos en el nav */
+    position: relative;
+}
+
+#nav input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 215px;
+}
+
+#nav button {
+    padding: 10px 20px;
+    background-color: #c54e16;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#nav button:hover {
+    background-color: #eb4c03;
+}
+
+.search-container {
+    position: relative;
+    border-radius: 10px;
+}
+
+#inputPokemon {
+    padding-right: 30px; /* Ajusta el espacio para el icono */
+}
+
+.clear-icon {
+    position: absolute;
+    right: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+#render {
+    width: 90%;
+    height: auto;
+    /* background-color: rgb(20, 110, 110); */
+    background-image: url("./imagen/pokemonFondo.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.carta {
+    width: 260px;
+    height: 300px;
+    /* background: rgba(255, 255, 255, 0.39); */
+    background-image: url("./imagen/pokemonFondoCarta3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.carta:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 40%;
+    height: 40%;
+}
+
+
+.pokemon-image {
+    width: 400%;     /* Ajusta el ancho según tus preferencias */
+    height: 200px;   /* Ajusta la altura según tus preferencias */
+    object-fit: cover; /* Mantiene las proporciones y cubre el contenedor */
+    border-radius: 8px; /* Agrega bordes redondeados si lo deseas */
+}

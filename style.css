@@ -1,0 +1,140 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 97vw;
+    height: auto;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#render{
+    width: 90%;
+    height: auto;
+    background-color: rgb(20, 110, 110);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.carta{
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 40%;
+    height: 40%;
+}
+
+#nav {
+    text-align: center;
+    padding: 20px;
+}
+
+#nav input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#nav button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#nav button:hover {
+    background-color: #45a049;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 97vw;
+    height: auto;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column; /* Cambiado de row a column para apilar los elementos */
+    align-items: center;
+}
+
+#nav {
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Color de fondo del nav */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un poco de elevación */
+    
+}
+
+#nav input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#nav button {
+    padding: 10px 20px;
+    background-color: #1114bb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#nav button:hover {
+    background-color: #45a049;
+}
+
+#render {
+    width: 90%;
+    height: auto;
+    background-color: rgb(20, 110, 110);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px; /* Añadido para dar espacio entre el nav y el render */
+}
+
+.carta {
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 40%;
+    height: 40%;
+}
